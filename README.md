@@ -10,7 +10,7 @@ Se utiliza en este caso Sass como preprocesador a través de PostCSS, BEM para e
 
 ## Instalación
 
-Para preparar el entorno se debe instalar Node.js e instalar *gulp-cli* como global y *postcss*, *gulp-postcss*, *autoprefixer* y *gulp-sass* como "--save-dev" dentro del proyecto. Por último configurar gulpfile.js con laas tareas necesarias.
+Para preparar el entorno se debe instalar Node.js e instalar *gulp*, *gulp-cli*, *postcss*, *gulp-postcss*, *autoprefixer* y *gulp-sass* como "--save-dev" dentro del proyecto. Por último configurar gulpfile.js con laas tareas necesarias.
 
 
 ## Pasos a realizar en el proyecto

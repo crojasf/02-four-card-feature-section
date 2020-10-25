@@ -15,4 +15,4 @@
 .DS_Store
 
 # Evitar los módulos de Node.js
-four-card-feature-section/node_modules
+node_modules

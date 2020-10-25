@@ -13,7 +13,7 @@ function defaultTask(cb) {
 	return gulp.src('./src/*.scss')
 		.pipe(sass().on('error', sass.logError))
 		.pipe(postcss(processors))
-		.pipe(gulp.dest('./public/css'));
+		.pipe(gulp.dest('./css'));
 }
 
 exports.default = function(){
