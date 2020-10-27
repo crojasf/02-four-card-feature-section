@@ -1,5 +1,96 @@
-$bgColorTest : hsl(0, 0%, 98%);
-body {
-	background-color: $bgColorTest;
+// FONTS
+$font-size: 15px;
+$font-family: "Poppins", sans-serif;
+
+@mixin font-size($n: 1) {
+	font-size: $n * $font-size;
 }
 
+// COLORS
+
+$color-red: hsl(0, 78%, 62%);
+$color-cyan: hsl(180, 62%, 55%);
+$color-orange: hsl(34, 97%, 64%);
+$color-blue: hsl(212, 86%, 64%);
+
+$color-very-dark-blue: hsl(234, 12%, 34%);
+$color-grayish-blue: hsl(229, 6%, 66%);
+$color-very-light-gray: hsl(0, 0%, 98%);
+$color-card-background: white;
+
+body {
+	background-color: $color-very-light-gray;
+	color: $color-grayish-blue;
+	@include font-size();
+	font-family: $font-family;
+}
+
+.features {
+	&__header,
+	&__cards {
+		margin: 0 auto;
+		max-width: 375px;
+		padding: 2em;
+		box-sizing: border-box;
+	}
+	&__header {
+		margin-top: 40px;
+		text-align: center;
+		& h1,
+		h2 {
+			@include font-size(1.6);
+			color: $color-very-dark-blue;
+			margin: $font-size 0;
+		}
+		& h1 {
+			font-weight: 200;
+		}
+		& h2 {
+			font-weight: bold;
+		}
+		& p {
+			line-height: $font-size * 1.8;
+		}
+	}
+}
+
+.card {
+	box-sizing: border-box;
+	background-color: $color-card-background;
+	border-radius: 5px;
+	padding: $font-size * 2;
+	margin-bottom: 30px;
+	max-width: 315px; // 375 conteiner - 30left - 30right
+	display: flex;
+	flex-direction: column;
+	box-shadow: 0 10px 20px lighten($color-grayish-blue, 25%);
+
+	&__title {
+		color: $color-very-dark-blue;
+		@include font-size(1.3);
+		margin: 0;
+	}
+	&__content {
+		@include font-size(0.85);
+		line-height: $font-size * 1.5;
+		font-weight: 200;
+	}
+	&__image {
+		height: 60px;
+		width: 60px;
+		align-self: flex-end;
+		margin-top: $font-size * 1.5;
+	}
+	&--supervisor {
+		border-top: 4px solid $color-cyan;
+	}
+	&--team {
+		border-top: 4px solid $color-red;
+	}
+	&--karma {
+		border-top: 4px solid $color-orange;
+	}
+	&--calculator {
+		border-top: 4px solid $color-blue;
+	}
+}

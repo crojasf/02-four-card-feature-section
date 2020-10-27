@@ -1,6 +1,58 @@
 body {
-  background-color: #fafafa; }
+  background-color: #fafafa;
+  color: #a3a5ae;
+  font-size: 15px;
+  font-family: "Poppins", sans-serif; }
 
-p {
-  margin: 0;
-  padding: 0; }
+.features__header, .features__cards {
+  margin: 0 auto;
+  max-width: 375px;
+  padding: 2em;
+  box-sizing: border-box; }
+
+.features__header {
+  margin-top: 40px;
+  text-align: center; }
+  .features__header h1,
+  .features__header h2 {
+    font-size: 24px;
+    color: #4c4e61;
+    margin: 15px 0; }
+  .features__header h1 {
+    font-weight: 200; }
+  .features__header h2 {
+    font-weight: bold; }
+  .features__header p {
+    line-height: 27px; }
+
+.card {
+  box-sizing: border-box;
+  background-color: white;
+  border-radius: 5px;
+  padding: 30px;
+  margin-bottom: 30px;
+  max-width: 315px;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 10px 20px #e7e7e9; }
+  .card__title {
+    color: #4c4e61;
+    font-size: 19.5px;
+    margin: 0; }
+  .card__content {
+    font-size: 12.75px;
+    line-height: 22.5px;
+    font-weight: 200; }
+  .card__image {
+    height: 60px;
+    width: 60px;
+    align-self: flex-end;
+    margin-top: 22.5px; }
+  .card--supervisor {
+    border-top: 4px solid #45d3d3; }
+  .card--team {
+    border-top: 4px solid #ea5353; }
+  .card--karma {
+    border-top: 4px solid #fcaf4a; }
+  .card--calculator {
+    border-top: 4px solid #549ef2; }

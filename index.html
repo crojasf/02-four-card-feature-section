@@ -8,6 +8,8 @@
 
   <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
 
+  <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css" />
   <title>Frontend Mentor | Four card feature section</title>
 
@@ -25,31 +27,30 @@
 </head>
 
 <body>
-  <main>
-    <section class="title-container">
-      <div class="title">
-        <h1>
-          Reliable, efficient delivery
-        </h1>
-        <h2>
-          Powered by Technology
-        </h2>
-        <p>Our Artificial Intelligence powered tools use millions of project data points
-          to ensure that your project is successful</p>
-      </div>
+  <main class="features">
+    <section class="features__header">
+      <h1>
+        Reliable, efficient delivery
+      </h1>
+      <h2>
+        Powered by Technology
+      </h2>
+      <p>Our Artificial Intelligence powered tools use millions of project data points
+        to ensure that your project is successful</p>
     </section>
 
-    <section class="features">
+    <section class="features__cards">
 
-      <div class="card card--supervisor">
-        <h3 class="card__title">
-          Supervisor
-        </h3>
-        <p class="card__content">
-          Monitors activity to identify project roadblocks
-        </p>
-        <img src="" alt="" class="card__image" />
-      </div>
+        <div class="card card--supervisor">
+          <h3 class="card__title">
+            Supervisor
+          </h3>
+          <p class="card__content">
+            Monitors activity to identify project roadblocks
+          </p>
+          <img src="images/icon-supervisor.svg" alt="" class="card__image" />
+        </div>
+
 
       <div class="card__container--desktop">
 
@@ -60,7 +61,7 @@
           <p class="card__content">
             Scans our talent network to create the optimal team for your project
           </p>
-          <img src="" alt="" class="card__image" />
+          <img src="images/icon-team-builder.svg" alt="" class="card__image" />
         </div>
 
         <div class="card card--karma">
@@ -70,21 +71,20 @@
           <p class="card__content">
             Regularly evaluates our talent to ensure quality
           </p>
-          <img src="" alt="" class="card__image" />
+          <img src="images/icon-karma.svg" alt="" class="card__image" />
         </div>
 
       </div>
 
-      <div class="card card--calculator">
-        <h3 class="card__title">
-          Calculator
-        </h3>
-        <p class="card__content">
-          Uses data from past projects to provide better delivery estimates
-        </p>
-        <img src="" alt="" class="card__image" />
-      </div>
-
+        <div class="card card--calculator">
+          <h3 class="card__title">
+            Calculator
+          </h3>
+          <p class="card__content">
+            Uses data from past projects to provide better delivery estimates
+          </p>
+          <img src="images/icon-calculator.svg" alt="" class="card__image" />
+        </div>
     </section>
 
   </main>
