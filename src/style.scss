@@ -18,6 +18,9 @@ $color-grayish-blue: hsl(229, 6%, 66%);
 $color-very-light-gray: hsl(0, 0%, 98%);
 $color-card-background: white;
 
+// MEDIA QUERY
+$media-desktop: 1400px;
+
 body {
 	background-color: $color-very-light-gray;
 	color: $color-grayish-blue;
@@ -36,11 +39,17 @@ body {
 	&__header {
 		margin-top: 40px;
 		text-align: center;
+		@media (min-width: $media-desktop) {
+			max-width: 600px;
+		}
 		& h1,
 		h2 {
 			@include font-size(1.6);
 			color: $color-very-dark-blue;
 			margin: $font-size 0;
+			@media (min-width: $media-desktop) {
+				@include font-size(2.5);
+			}
 		}
 		& h1 {
 			font-weight: 200;
@@ -50,6 +59,14 @@ body {
 		}
 		& p {
 			line-height: $font-size * 1.8;
+		}
+	}
+	&__cards {
+		@media (min-width: $media-desktop) {
+			max-width: 1125px;
+			display: flex;
+			align-items: center;
+			justify-content: space-around;
 		}
 	}
 }

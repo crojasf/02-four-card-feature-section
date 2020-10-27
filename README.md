@@ -23,8 +23,8 @@ Para preparar el entorno se debe instalar Node.js en el equipo e instalar *gulp*
 ## Demo
 El resultado del proyecto puede verse [aquí](https://crojasf.github.io/02-four-card-feature-section/).
 
-<!--
+
 ![desktop-final](/design/desktop-final.png)
--->
+
 
 

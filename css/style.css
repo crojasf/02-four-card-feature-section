@@ -13,17 +13,31 @@ body {
 .features__header {
   margin-top: 40px;
   text-align: center; }
+  @media (min-width: 1400px) {
+    .features__header {
+      max-width: 600px; } }
   .features__header h1,
   .features__header h2 {
     font-size: 24px;
     color: #4c4e61;
     margin: 15px 0; }
+    @media (min-width: 1400px) {
+      .features__header h1,
+      .features__header h2 {
+        font-size: 37.5px; } }
   .features__header h1 {
     font-weight: 200; }
   .features__header h2 {
     font-weight: bold; }
   .features__header p {
     line-height: 27px; }
+
+@media (min-width: 1400px) {
+  .features__cards {
+    max-width: 1125px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around; } }
 
 .card {
   box-sizing: border-box;
