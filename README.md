@@ -2,7 +2,7 @@
 
 ## Descripción
 
-Segundo proyecto para practicar como desarrollador front-end, sí desde las bases😅.
+Segundo proyecto para practicar como desarrollador front-end.
 
 Desarrollar una sección de Features compuesto por 4 Cards del proyecto de [Frontend Mentor](https://www.frontendmentor.io/challenges/four-card-feature-section-weK1eFYK).
 
@@ -10,7 +10,7 @@ Se utiliza en este caso Sass como preprocesador a través de PostCSS, BEM para e
 
 ## Instalación
 
-Para preparar el entorno se debe instalar Node.js e instalar *gulp*, *gulp-cli*, *postcss*, *gulp-postcss*, *autoprefixer* y *gulp-sass* como "--save-dev" dentro del proyecto. Por último configurar gulpfile.js con laas tareas necesarias.
+Para preparar el entorno se debe instalar Node.js en el equipo e instalar *gulp*, *gulp-cli*, *postcss*, *gulp-postcss*, *autoprefixer* y *gulp-sass* como "--save-dev" dentro del proyecto. Por último configurar gulpfile.js con las tareas necesarias. (Ver ficheros gulpfile.js y package.json)
 
 
 ## Pasos a realizar en el proyecto
@@ -21,10 +21,10 @@ Para preparar el entorno se debe instalar Node.js e instalar *gulp*, *gulp-cli*,
 + Aplicar MediaQuerys para estilos para Desktop y algunos ajustes finales.
 
 ## Demo
-El resultado del proyecto puede verse [aquí](https://crojasf.github.io/01-single-price-grid-component/).
+El resultado del proyecto puede verse [aquí](https://crojasf.github.io/02-four-card-feature-section/).
 
-
+<!--
 ![desktop-final](/design/desktop-final.png)
-
+-->
 
 

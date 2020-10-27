@@ -1,8 +1,5 @@
-$bgColorTest : green;
+$bgColorTest : hsl(0, 0%, 98%);
 body {
 	background-color: $bgColorTest;
 }
-p {
-	margin: 0;
-	padding: 0;
-}
+
